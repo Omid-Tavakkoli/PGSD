@@ -24,13 +24,13 @@ pip install numpy matplotlib seaborn scipy tifffile edt
 ```bash
 conda create -n pgsd python=3.10 -y
 conda activate pgsd
-conda install -c conda-forge numpy matplotlib seaborn scipy tifffile -y
-pip install edt
+conda install -c conda-forge numpy matplotlib seaborn scipy tifffile edt -y
 ```
 
 Note: `edt` is optional but strongly recommended — it replaces the single-threaded scipy distance transform with a fast multi-threaded implementation. Without it, the code falls back to scipy automatically.
 
 ---
+
 
 ### Inputs
 
