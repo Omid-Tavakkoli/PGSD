@@ -42,6 +42,8 @@ def read_input(filepath):
             key, value = line.split('=', 1)
             key = key.strip()
             value = value.strip()
+            if not value:
+                continue
             if key in ('nx', 'ny', 'nz', 'pore_label', 'solid_label', 'num_threads'):
                 params[key] = int(value)
             elif key == 'resolution':
